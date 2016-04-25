@@ -8,7 +8,7 @@ class Css extends Bundle
   minify: (code) ->
     return code unless @options.minifyCss
 
-    csso.justDoIt(code)
+    csso.minify(code)
 
   render: (namespace) ->
     style = ''
